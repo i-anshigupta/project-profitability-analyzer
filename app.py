@@ -7,13 +7,16 @@ st.set_page_config(page_title="Project Profitability Analyzer", layout="wide")
 st.title("📊 Project Profitability Analyzer")
 
 # Load data
-file_path = "D:\\project\\data science\\Project_Profitability_Tracker_100.csv"
+file_path = "dataa/Project_Profitability_Tracker_100.csv"
+
 
 df = pd.read_csv(file_path)
 
 # Data cleaning & feature engineering
-df['Start_Date'] = pd.to_datetime(df['Start_Date'])
-df['End_Date'] = pd.to_datetime(df['End_Date'])
+# Data cleaning & feature engineering
+df['Start_Date'] = pd.to_datetime(df['Start_Date'], dayfirst=True)
+df['End_Date'] = pd.to_datetime(df['End_Date'], dayfirst=True)
+
 
 df['Profit'] = df['Revenue'] - df['Cost']
 df['ROI'] = (df['Profit'] / df['Cost']) * 100

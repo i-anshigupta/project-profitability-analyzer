@@ -25,9 +25,17 @@ An interactive **Streamlit dashboard** for analyzing project profitability, ROI,
 - **Pandas**
 - **Matplotlib**
 - **Seaborn**
+  
 
 ---
 
 ## 📂 Project Structure
 
 
+project/
+├── data/
+│   └── ...
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore

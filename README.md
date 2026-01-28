@@ -17,6 +17,7 @@ An interactive **Streamlit dashboard** for analyzing project profitability, ROI,
 - 🏆 Top 5 clients by profit
 
 ---
+---
 
 ## 🛠️ Tech Stack
 

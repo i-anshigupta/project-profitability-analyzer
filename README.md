@@ -35,7 +35,6 @@ An interactive **Streamlit dashboard** for analyzing project profitability, ROI,
 
 project/
 ├── data/
-│   └── ...
 ├── app.py
 ├── requirements.txt
 ├── README.md
